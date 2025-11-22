@@ -2,9 +2,12 @@
 
 import { useState } from "react"
 
-interface NavigationProps {}
+interface NavigationProps {
+  activeSection: string
+  onNavClick: (section: string) => void
+}
 
-export default function Navigation({}: NavigationProps) {
+export default function Navigation({activeSection, onNavClick}: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
@@ -14,6 +17,14 @@ export default function Navigation({}: NavigationProps) {
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },
   ]
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+      onNavClick(id)
+      setIsOpen(false)
+    }
+  }
 
   return (
     <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-lg z-50 border-b border-secondary/20">
@@ -27,24 +38,24 @@ export default function Navigation({}: NavigationProps) {
           </div>
 
 
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                className="text-sm font-medium text-white/80 hover:text-accent transition-colors drop-shadow-sm"
-              >
-                {link.name}
-              </button>
-            ))}
-
-            <button className="px-4 py-2 bg-accent text-background rounded-full font-semibold 
-              hover:shadow-[0_0_20px_rgba(0,140,255,0.45)] hover:-translate-y-0.5 transition-all">
-              Get in Touch
+         <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <button
+              key={link.id}
+              onClick={() => handleScroll(link.id)}
+              className={`text-sm font-medium drop-shadow-sm transition-colors ${
+                activeSection === link.id
+                  ? "text-pink-500"
+                  : "text-white/80 hover:text-accent"
+              }`}
+            >
+              {link.name}
             </button>
-          </div>
+          ))}
+        </div>
 
 
-          <div className="md:hidden p-2 text-white">
+          <div className="md:hidden p-8 text-white">
             <button title="Toggle menu" onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,13 +76,16 @@ export default function Navigation({}: NavigationProps) {
             {navLinks.map((link) => (
               <button
                 key={link.id}
+                onClick={()=>handleScroll(link.id)}
                 className="block w-full text-left px-4 py-2 rounded-lg text-white/80 hover:text-accent hover:shadow-[0_0_12px_rgba(0,140,255,0.4)] transition-all"
               >
                 {link.name}
               </button>
             ))}
 
-            <button className="w-full px-4 py-2 bg-accent text-background rounded-full font-semibold 
+            <button 
+            onClick={()=>handleScroll("contact")}
+            className="w-full px-4 py-2 bg-accent text-background rounded-full font-semibold 
               hover:shadow-[0_0_20px_rgba(0,140,255,0.45)] hover:-translate-y-0.5 transition-all mt-2">
               Get in Touch
             </button>
