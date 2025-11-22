@@ -33,9 +33,7 @@ export default function HeroSection() {
             </div>
 
             <p className="text-foreground/60 leading-relaxed max-w-md">
-              I’m a Front-End Developer passionate about building intuitive, responsive, and visually engaging
-              web experiences. I focus on writing clean, maintainable code while creating interfaces that
-              delight users and perform seamlessly across devices.
+              I’m a passionate developer and artist. I focus on building intuitive, responsive, and visually engaging web experiences while continuously learning and exploring new technologies.
             </p>
 
         
