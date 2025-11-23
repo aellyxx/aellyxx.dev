@@ -83,12 +83,12 @@ export default function Navigation({activeSection, onNavClick}: NavigationProps)
               </button>
             ))}
 
-            <button 
+            {/* <button 
             onClick={()=>handleScroll("contact")}
             className="w-full px-4 py-2 bg-accent text-background rounded-full font-semibold 
               hover:shadow-[0_0_20px_rgba(0,140,255,0.45)] hover:-translate-y-0.5 transition-all mt-2">
               Get in Touch
-            </button>
+            </button> */}
           </div>
         )}
       </div>

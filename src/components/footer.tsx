@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <p className="text-white text-sm text-center">
-          Copyright {currentYear} Elyon Francine. All rights reserved.
+          Copyright {currentYear} Elyon Francine A. Baña. All rights reserved.
         </p>
       </div>
     </footer>
