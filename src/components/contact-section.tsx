@@ -35,7 +35,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-28 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-b from-black via-background to-black"
+      className="py-28 px-4 sm:px-6 lg:px-8 relative bg-linear-to-b from-black via-background to-black"
     >
 
       <div className="absolute inset-0 pointer-events-none opacity-30">
@@ -45,9 +45,12 @@ export default function ContactSection() {
 
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-4">
+          <h2 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-lg mb-8">
             Let's Connect
           </h2>
+
+
+
         <p className="text-white/70 text-lg max-w-xl mx-auto">
             I'm always open to new opportunities and collaborations. Feel free to reach out!
           </p>
@@ -65,7 +68,7 @@ export default function ContactSection() {
       
 
               <div
-                className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r ${contact.color} blur-[60px]`}
+                className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-linear-to-r ${contact.color} blur-[60px]`}
               />
 
 
@@ -74,8 +77,11 @@ export default function ContactSection() {
                 <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-white/10">
                   {contact.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-accent drop-shadow">{contact.title}</h3>
-                <p className="text-white/80 font-medium">{contact.value}</p>
+           <h3 className="text-xl font-semibold text-accent drop-shadow">{contact.title}</h3>
+
+            <p className="text-white/60 font-medium leading-relaxed">{contact.value}</p>
+
+
               </div>
             </a>
           ))}

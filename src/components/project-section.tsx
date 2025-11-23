@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react"
 export default function ProjectsSection() {
   const projects = [
 
-    
+
     {
       id: 1,
       title: "Lorem Ipsum",
@@ -48,7 +48,7 @@ export default function ProjectsSection() {
 
     <section
       id="projects"
-      className="py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-background to-black relative"
+      className="py-28 px-4 sm:px-6 lg:px-8 bg-background"
     >
 
 
@@ -60,11 +60,11 @@ export default function ProjectsSection() {
 
 
 
-      <div className="max-w-6xl mx-auto relative z-10 mb-20 text-left">
+      <div className="max-w-6xl mx-auto relative z-10 mb-20 text-center">
         <h2 className="text-5xl font-extrabold text-white drop-shadow-lg mb-4">
           Featured Projects
         </h2>
-        <p className="text-lg text-white/60 max-w-xl">
+          <p className="text-lg text-white/60 mt-2 max-w-xl mx-auto">
           Some of the projects I've worked on, showcasing my skills in modern web development.
         </p>
       </div>
@@ -79,7 +79,7 @@ export default function ProjectsSection() {
 
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-accent/20 blur-[60px]" />
 
-            <div className="relative h-48 overflow-hidden bg-gradient-to-br from-accent/10 to-secondary/5">
+            <div className="relative h-48 overflow-hidden bg-linear-to-br from-accent/10 to-secondary/5">
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}

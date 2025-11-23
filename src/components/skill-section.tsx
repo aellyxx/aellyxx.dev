@@ -5,10 +5,10 @@ export default function SkillsSection() {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 60 },
-        { name: "Next.js", level: 60 },
+        { name: "React", level: 50 },
+        { name: "Next.js", level: 50 },
         { name: "TypeScript", level: 65 },
-        { name: "Tailwind CSS", level: 60 },
+        { name: "Tailwind CSS", level: 40 },
       ],
     },
 //ps. will transfer this to another file later
@@ -36,11 +36,11 @@ export default function SkillsSection() {
           <div className="w-64 h-64 bg-purple-500/40 blur-[140px] absolute bottom-0 right-10" />
         </div>
 
-        <div className="relative mb-20">
+        <div className="relative mb-20 text-center">
           <h2 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-lg">
             Skills & Expertise
           </h2>
-          <p className="text-lg text-white/60 mt-2 max-w-xl">
+          <p className="text-lg text-white/60 mt-2 max-w-xl mx-auto">
             Technologies and tools I use to design and build my projects
           </p>
         </div>
