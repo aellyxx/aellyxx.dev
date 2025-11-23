@@ -55,7 +55,7 @@ export default function Navigation({activeSection, onNavClick}: NavigationProps)
         </div>
 
 
-          <div className="md:hidden p-10 text-white">
+          <div className="md:hidden p-4 text-white">
             <button title="Toggle menu" onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

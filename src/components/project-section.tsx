@@ -68,7 +68,7 @@ export default function ProjectsSection() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto relative grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className=" max-w-6xl mx-auto relative grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project) => (
           <div
 
@@ -91,8 +91,8 @@ export default function ProjectsSection() {
 
 
             <div className="p-6 space-y-4 relative z-10">
-              <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-              <p className="text-foreground/70 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold text-white">{project.title}</h3>
+              <p className="text-white/70 text-sm leading-relaxed">
                 {project.description}
               </p>
 
