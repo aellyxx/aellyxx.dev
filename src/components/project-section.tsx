@@ -47,7 +47,7 @@ export default function ProjectsSection() {
 
     <section
       id="projects"
-      className="py-28 px-4 sm:px-6 lg:px-8 bg-background"
+      className="py-28 px-4 sm:px-6 lg:px-8 bg-black"
     >
 
 

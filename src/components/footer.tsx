@@ -29,7 +29,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-background/50 border-t border-secondary/20 py-3 px-4 sm:px-6 lg:px-8 relative">
+    <footer className="bg-black border-t border-secondary/20 py-3 px-4 sm:px-6 lg:px-8 relative">
 
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <div className="w-32 h-32 bg-green-400/20 blur-[80px] absolute -top-6 -left-6" />
@@ -69,7 +69,7 @@ export default function Footer() {
           )}
         </div>
 
-        <p className="text-foreground/60 text-sm text-center">
+        <p className="text-white text-sm text-center">
           Copyright {currentYear} Elyon Francine. All rights reserved.
         </p>
       </div>

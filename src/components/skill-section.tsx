@@ -27,7 +27,7 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="py-28 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-black via-background to-black relative"
+      className="py-28 px-4 sm:px-6 lg:px-8  to-black relative bg-black"
     >
       <div className="max-w-6xl mx-auto">
 

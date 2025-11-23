@@ -41,7 +41,7 @@ export default function AboutCards() {
   return (
     <section 
     id="about"
-     className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
+     className="py-24 px-4 sm:px-6 lg:px-8 bg-black">
     <div className="max-w-7xl mx-auto w-full text-center mb-16">
         {/* <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About me</h2> */}
         <h2 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-lg mb-8">About me</h2>

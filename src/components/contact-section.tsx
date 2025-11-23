@@ -35,7 +35,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-28 px-4 sm:px-6 lg:px-8 relative bg-linear-to-b from-black via-background to-black"
+      className="py-28 px-4 sm:px-6 lg:px-8 relative bg-black"
     >
 
       <div className="absolute inset-0 pointer-events-none opacity-30">
