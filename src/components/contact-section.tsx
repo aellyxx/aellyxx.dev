@@ -18,7 +18,7 @@ export default function ContactSection() {
       icon: <Linkedin size={24} className="text-accent" />,
       title: "LinkedIn",
       value: "/in/elyonfrancine",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/elyon-francine-bana-562447339",
       color: "from-blue-500 via-cyan-400 to-indigo-500",
     },
 

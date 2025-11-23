@@ -7,7 +7,7 @@ export default function SkillsSection() {
       skills: [
         { name: "React", level: 50 },
         { name: "Next.js", level: 50 },
-        { name: "TypeScript", level: 65 },
+        { name: "TypeScript", level: 50 },
         { name: "Tailwind CSS", level: 40 },
       ],
     },
@@ -16,10 +16,10 @@ export default function SkillsSection() {
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 70 },
-        { name: "Express.js", level: 50 },
-        { name: "API Design", level: 50 },
-        { name: "Database Design", level: 60 },
+        { name: "Node.js", level: 60 },
+        { name: "Python", level: 70 },
+        { name: "C#", level: 50 },
+        { name: "Database Design", level: 70 },
       ],
     },
   ]

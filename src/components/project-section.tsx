@@ -9,38 +9,37 @@ export default function ProjectsSection() {
 
     {
       id: 1,
-      title: "Lorem Ipsum",
+      title: "Everything Matcha",
       description:
-     "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, tenetur est. Aliquam fugit ipsam possimus obcaecati asperiores nesciunt commodi quis debitis quia, sit rem. Illum corrupti officia aspernatur vitae odit?",
+     "Everything Matcha is a blog website I created to share my passion love and for matcha",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      image: "",
-      github: "https://github.com",
-      live: "https://example.com",
+      image: "/images/everything-matcha.png",
+      github: "https://github.com/aellyxx/everything-matcha",
+      live: "https://everything-matcha.vercel.app/",
     },
 
 
     {
       id: 2,
-      title: "Lorem Ipsum",
+      title: "Sigrab",
       description:
-       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci voluptate expedita officia neque beatae officiis nostrum quasi similique aperiam. Omnis quo repellendus dolor deleniti quas et reprehenderit incidunt magni",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      image: "",
-      github: "https://github.com",
-      live: "https://example.com",
+       "Sigrab is a ticketing website for the Sigrab Film Festival. I contributed to the front-end design of the admin panel, working under the guidance of Software Engineering students from CPU.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "MongoDB"],
+      image: "/images/sigrab.png",
+      github: "",
+      live: "https://www.sigrab.site/",
     },
 
 
     {
       id: 3,
-      title: "Lorem Ipsum",
+      title: "Candelight",
       description:
-       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci voluptate expedita officia neque beatae officiis nostrum quasi similique aperiam. Omnis quo repellendus dolor deleniti quas et reprehenderit incidunt magni",
-
-   technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      image: "",
-      github: "https://github.com",
-      live: "https://example.com",
+       "Candelight is a blog where I share my love for candle making, from techniques and ideas to inspiration.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      image: "/images/candelight.png",
+      github: "https://github.com/aellyxx/candelight",
+      live: "https://candelight.vercel.app/",
     },
   ]
 
@@ -93,9 +92,10 @@ export default function ProjectsSection() {
 
             <div className="p-6 space-y-4 relative z-10">
               <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-              <p className="text-foreground/70 text-sm leading-relaxed line-clamp-2">
+              <p className="text-foreground/70 text-sm leading-relaxed">
                 {project.description}
               </p>
+
               <div className="flex flex-wrap gap-2 pt-2">
                 {project.technologies.slice(0, 3).map((tech) => (
                   <span
@@ -110,15 +110,25 @@ export default function ProjectsSection() {
 
 
               <div className="flex gap-3 pt-4 border-t border-white/10">
-                <a
-                  href={project.github}
-                  className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-white/10 hover:bg-white/20 rounded-lg text-white/80 hover:text-white transition-colors text-sm font-medium"
-                >
-                  <Github size={16} />
-                  Code
-                </a>
+
+                {project.github ? (
+                  <a
+                  target="_blank"
+                    href={project.github}
+                    className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-white/10 hover:bg-white/20 rounded-lg text-white/80 hover:text-white transition-colors text-sm font-medium"
+                  >
+                    <Github size={16} />
+                    Code
+                  </a>
+                ) : (
+                  <div className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-white/5 border border-white/10 rounded-lg text-white/40 text-sm cursor-not-allowed">
+                    Private
+                  </div>
+                )}
+
                 <a
                   href={project.live}
+                  target="_blank"
                   className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-accent/10 hover:bg-accent/20 text-accent hover:text-accent rounded-lg transition-colors text-sm font-medium"
                 >
 

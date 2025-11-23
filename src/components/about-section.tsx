@@ -24,7 +24,7 @@ export default function AboutCards() {
       icon: <Paintbrush className="w-10 h-10 text-accent" />,
       title: "Artist",
       description:
-        "Believe in da Vinci's philosophy of blending art and science; create both digital and traditional art.",
+        "Influenced by da Vinci’s view that understanding begins with curiosity, seeking to learn from experience and transform ideas into thoughtful creations",
     },
 
 

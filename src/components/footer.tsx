@@ -2,44 +2,44 @@
 
 import { Phone, Facebook, Instagram } from "lucide-react"
 import { useState } from "react"
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
-
   const [showPhone, setShowPhone] = useState(false)
 
   const socials = [
     {
       type: "phone",
-      icon: <Phone size={24} />,
+      icon: <Phone size={20} />,
       value: "09975725766",
       color: "text-green-400",
     },
-
-
     {
       type: "link",
-      icon: <Facebook size={24} />,
+      icon: <Facebook size={20} />,
       link: "https://www.facebook.com/share/1ByRoJdSre/",
       color: "text-blue-500",
     },
     {
       type: "link",
-      icon: <Instagram size={24} />,
+      icon: <Instagram size={20} />,
       link: "https://www.instagram.com/aell_yon?igsh=MWpwcGE0dWJxOXh2",
       color: "text-pink-500",
     },
   ]
 
   return (
-    <footer className="bg-background/50 border-t border-secondary/20 py-8 px-4 sm:px-6 lg:px-8 relative">
+    <footer className="bg-background/50 border-t border-secondary/20 py-3 px-4 sm:px-6 lg:px-8 relative">
+
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="w-48 h-48 bg-green-400/20 blur-[100px] absolute -top-10 -left-10" />
-        <div className="w-48 h-48 bg-pink-500/20 blur-[100px] absolute -bottom-10 -right-10" />
+        <div className="w-32 h-32 bg-green-400/20 blur-[80px] absolute -top-6 -left-6" />
+        <div className="w-32 h-32 bg-pink-500/20 blur-[80px] absolute -bottom-6 -right-6" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-4">
-        <div className="flex gap-6">
 
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-2">
+        {/* Social Icons */}
+        <div className="flex gap-4">
           {socials.map((social, id) =>
             social.type === "phone" ? (
               <div
@@ -50,13 +50,11 @@ export default function Footer() {
               >
                 {social.icon}
                 {showPhone && (
-                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white/90 text-black text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap">
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white/90 text-black text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap">
                     {social.value}
                   </div>
                 )}
               </div>
-
-
             ) : (
               <a
                 key={id}
@@ -70,7 +68,6 @@ export default function Footer() {
             )
           )}
         </div>
-
 
         <p className="text-foreground/60 text-sm text-center">
           Copyright {currentYear} Elyon Francine. All rights reserved.

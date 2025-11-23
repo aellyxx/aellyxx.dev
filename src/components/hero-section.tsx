@@ -33,7 +33,7 @@ export default function HeroSection() {
                 Welcome to my portfolio
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight drop-shadow-[0_0_14px_rgba(255,255,255,0.08)]">
-                Hi, I'm <span className="text-accent">Elyon</span>
+                Hi, I'm <span className="text-accent text-pink-500">Elyon</span>
               </h1>
               <p className="text-lg text-white/70 leading-relaxed max-w-lg font-medium drop-shadow-sm">
                 Front-End Developer turning ideas into polished, interactive websites
