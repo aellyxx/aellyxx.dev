@@ -5,8 +5,8 @@ export default function SkillsSection() {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 50 },
-        { name: "Next.js", level: 50 },
+        { name: "React", level: 60 },
+        { name: "Next.js", level: 60 },
         { name: "TypeScript", level: 50 },
         { name: "Tailwind CSS", level: 40 },
       ],
