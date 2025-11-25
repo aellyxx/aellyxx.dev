@@ -56,7 +56,7 @@ export default function HeroSection() {
             onClick={() => handleScroll("projects")}
             className="
               px-8 py-3 w-full sm:w-auto
-              bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400
+              bg-linear-to-r from-purple-500 via-pink-500 to-blue-400
               text-background font-semibold rounded-full
               flex items-center justify-center gap-2
               hover:shadow-[0_0_25px_rgba(255,0,255,0.6)]

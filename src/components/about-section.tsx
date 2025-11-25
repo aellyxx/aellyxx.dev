@@ -43,7 +43,7 @@ export default function AboutCards() {
     id="about"
      className="py-24 px-4 sm:px-6 lg:px-8 bg-black">
     <div className="max-w-7xl mx-auto w-full text-center mb-16">
-        {/* <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About me</h2> */}
+
         <h2 className="text-5xl font-extrabold text-white tracking-tight drop-shadow-lg mb-8">About me</h2>
 
 
@@ -60,10 +60,10 @@ export default function AboutCards() {
          
          >
             <div className="mb-4">{service.icon}</div>
-            {/* <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3> */}
+   
             <h3 className="text-xl font-bold text-accent drop-shadow mb-2">{service.title}</h3>
 
-            {/* <p className="text-foreground/80">{service.description}</p> */}
+
             <p className="text-white/60 font-medium leading-relaxed">{service.description}</p>
 
           </div>

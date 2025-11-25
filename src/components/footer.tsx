@@ -38,7 +38,6 @@ export default function Footer() {
 
 
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-2">
-        {/* Social Icons */}
         <div className="flex gap-4">
           {socials.map((social, id) =>
             social.type === "phone" ? (
