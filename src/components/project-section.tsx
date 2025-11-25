@@ -11,7 +11,7 @@ export default function ProjectsSection() {
       id: 1,
       title: "Everything Matcha",
       description:
-     "Everything Matcha is a blog website I created to share my passion and love for matcha",
+     "Everything Matcha is a blog website that I created to share my passion and love for matcha",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
       image: "/images/everything-matcha.png",
       github: "https://github.com/aellyxx/everything-matcha",
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       id: 3,
       title: "Candelight",
       description:
-       "Candelight is a blog where I share my love for candle making, from guides to matereials used.",
+       "Candlelight is a blog where I share my love for candle making, including guides and information about the materials used.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
       image: "/images/candelight.png",
       github: "https://github.com/aellyxx/candelight",
